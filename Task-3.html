@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Task 3</title>
+</head>
+<body>
+    <form method="get">
+        <fieldset>
+            <legend>Personal Information</legend>
+                <label for="FirstName">First Name*:</label>
+                <input type="text" id="FirstName" name="first-name" placeholder="Your first name" value="" required>                
+                <br>
+                <label for="LastName">Last Name*:</label>
+                <input type="text" id="LastName" name="last-name" placeholder="Your last name" required>
+                <br>
+                <label for="Email">Email Address*:</label> 
+                <input type="email" id="Email" name="email-address" placeholder="Your email address" required>                              
+                <br>
+                <label for="Password">Password input*:</label> 
+                <input type="password" id="Password" name="Password" required>
+                <br>
+                <label for="RepeatPassword">Repeat password*:</label> 
+                <input type="password" id="RepeatPassword" name="Repeat-Password" required>              
+                <br>
+        </fieldset>
+        <fieldset>
+            <legend>Profile Information</legend>
+                Grade Level
+                <input type="radio" name="grade-level" id="Freshman" value="Freshman">
+                <label for="Freshman">Freshman</label>
+                
+                <input type="radio" name="grade-level" id="Sophomore" value="Sophomore">
+                <label for="Sophomore">Sophomore</label>
+                
+                <input type="radio" name="grade-level" id="Junior" value="Junior">
+                <label for="Junior">Junior</label>
+
+                <input type="radio" name="grade-level" id="Senior" value="Senior">
+                <label for="Senior">Senior</label>
+
+                <input type="radio" name="grade-level" id="Graduate" value="Graduate">
+                <label for="Graduate">Graduate</label>
+                <br>
+                <label for="fav-genre">Favorite Genre of Music (You can select multiple hold command/control + shift and click) *:</label>
+                <select multiple required name="fav-music-genre" id="fav-genre">
+                    <option value="rock">rock</option>
+                    <option value="hip hop">hip hop</option>
+                    <option value="EDM">EDM</option>
+                    <option value="classical">classical</option>
+                </select>
+                <br>
+                <label for="fav-wu-tang-clan">Favorite Member of Wu Tang Clan*:</label>
+                <select required name="fav-wu-tang-clan" id="fav-wu-tang-clan">
+                    <option value="">--Select--</option>
+                    <option value="Rza">Rza</option>
+                    <option value="Gza">Gza</option>
+                    <option value="Ol'Dirty">Ol' Dirty</option>
+                    <option value="Inspectah-Deck">Inspectah Deck</option>
+                    <option value="Raekwon">Raekwon</option>
+                    <option value="U-God">U-God</option>
+                    <option value="Ghostface-Killah">Ghostface Killah</option>
+                    <option value="Method-Man">Method Man</option>
+                </select>
+                <br>
+                <input type="checkbox" name="spam-mail" id="spam-mail" value="1">
+                <label for="spam-mail">Sign me up for spam emails, because I don't get enough junk email!</label>
+        </fieldset>
+            * Required
+            <input type="submit">
+    </form>
+</body>
+</html>
